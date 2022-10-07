@@ -1,4 +1,4 @@
-function getComputerChoice(){
+function getComputerChoice(){ //Generates the Hand based of a random number
     randomNumber = Math.floor(Math.random() * 3);
     let compHand;
     switch(randomNumber){
@@ -15,7 +15,7 @@ function getComputerChoice(){
     return compHand;
 }
 
-function playRound(){
+function playRound(){ //compares the picks and chooses a result
     let playerSelection = playerInput();
     let computerSelection = getComputerChoice();
     if(playerSelection == computerSelection)
@@ -54,7 +54,7 @@ function playRound(){
     }
 }
 
-function playerInput(){
+function playerInput(){ //takes the userinput and fromats it
     let inputText;
     while(1){
         inputText = prompt("Input?");
@@ -71,7 +71,7 @@ function playerInput(){
     }
 }
 
-function game(){
+function game(){ //logic to play 5 rounds and posts the result
     let playerScore = 0;
     let computerScore = 0;
     console.log("Game begins!")
