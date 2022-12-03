@@ -74,7 +74,6 @@ const rockPicture = document.createElement('img');
 const paperPicture = document.createElement('img');
 const scissorsPicture = document.createElement('img');
 const reset = document.createElement('button');
-
 finish.appendChild(winPicture);
 finish.appendChild(losePicture)
 winPicture.style.display = 'none';
